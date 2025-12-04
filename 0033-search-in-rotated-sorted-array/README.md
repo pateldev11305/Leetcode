@@ -27,3 +27,7 @@
 	<li><code>nums</code> is an ascending array that is possibly rotated.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+<h3>Solution</h3>
+<p>Here we divide the lists in sorted and unsorted by value of Mid </p>
+<p>If L is less than mid then the left sub list is sorted</p>
+	<p>now if target lies in that left sublist, we decrement r to mid-1 else increment the l to mid+1 </p>
