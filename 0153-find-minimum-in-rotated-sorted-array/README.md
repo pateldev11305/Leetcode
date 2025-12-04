@@ -46,3 +46,14 @@
 	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted and rotated between <code>1</code> and <code>n</code> times.</li>
 </ul>
+<h3>Solution</h3>
+<p>[a,b,c,d,e,f...] find min but we know as its rotated, if the min is less then the right side pointer, we know that the left sub list is of no use so now we increment l to mid+1 to find the min in the right sub list</p>
+<p>But is the left sub list is sorted, the mid will be greater than the left pointer so in this case we make the right pointer to mid pointer (remember not the mid because if we do so, in smaller sub lists, we can loose the track and can go directly to the left sublist when we are searching in right sublist (happens when there are 2 elements left in the list) thus at the end of the loop we can return l or r as both will point to the minimum which is also the reason for putting condition l(<)r in while loop so that l donot cross r</p>
+<h3>Example</h3>
+<p>[3,4,5,1,2]</p>
+<p>l=3</p>
+<p>m=5</p>
+<p>r=2 now m(>)2 so we use the right sublist so l=m+1</p>
+<p>l,m,r = 1,1,2</p>
+<p>m(<)2 but if we do r=m-1, l=1 but r=5 and m=4 which won't give the right answer </p>
+<p>Thus now r=m so l,m,r=1 which returns the func as now l is not less than r anymore</p>
