@@ -1,0 +1,16 @@
+class Solution:
+    def getMinMax(self, arr):
+        lowest = arr[0]
+        highest = arr[0]
+
+        for i in range(len(arr) - 1):
+            nxtPtr = i + 1
+
+            if arr[i] < arr[nxtPtr]:
+                lowest = min(lowest, arr[i])
+                highest = max(highest, arr[nxtPtr])
+            else:
+                lowest = min(lowest, arr[nxtPtr])
+                highest = max(highest, arr[i])
+
+        return [lowest, highest]
