@@ -1,0 +1,9 @@
+class Solution:
+    def getMinMax(self, arr):
+        # code here
+        minimum=arr[0]
+        maximum=arr[0]
+        for i in range(len(arr)):
+            minimum=min(minimum,arr[i])
+            maximum=max(maximum,arr[i])
+        return [minimum,maximum]
