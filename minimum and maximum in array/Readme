@@ -1,0 +1,67 @@
+# Find Minimum and Maximum Element in an Array
+
+## 🧩 Problem Statement
+
+Given an array `arr` of size `n`, find the **minimum** and **maximum** elements in the array.
+
+---
+
+## 🔍 Task
+
+You are given an array of integers.  
+Your task is to **find the minimum and maximum element** present in the array.
+
+---
+
+## 📥 Input
+
+- An integer array `arr[]`
+- An integer `n` representing the size of the array
+
+---
+
+## 📤 Output
+
+- Return or print **two integers**:
+  - The **minimum element**
+  - The **maximum element**
+
+---
+
+## 📌 Constraints
+
+- `1 ≤ n ≤ 10⁵`
+- `-10⁹ ≤ arr[i] ≤ 10⁹`
+
+---
+
+## 📘 Examples
+
+### Example 1
+
+Input:
+n = 5
+arr[] = {3, 5, 4, 1, 9}
+Output:
+1 9
+
+**Explanation:**  
+The minimum element in the array is `1` and the maximum element is `9`.
+
+---
+
+### Example 2
+
+Input:
+n = 6
+arr[] = {22, 14, 8, 17, 35, 3}
+Output:
+3 35
+
+
+---
+
+## 🔗 Problem Source
+
+GeeksforGeeks  
+https://www.geeksforgeeks.org/problems/find-minimum-and-maximum-element-in-an-array4428/1
